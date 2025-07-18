@@ -1,0 +1,66 @@
+.authors-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.authors-container h2 {
+  color: #6a11cb;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.authors-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.authors-table th {
+  text-align: left;
+  padding-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 2px solid #6a11cb;
+}
+
+.authors-table td {
+  padding: 12px 10px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  color: #34495e;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.authors-table tr:hover td {
+  background-color: #d6e0ff;
+  color: #1a237e;
+}
+
+@media (max-width: 600px) {
+  .authors-table, .authors-table thead, .authors-table tbody, .authors-table th, .authors-table td, .authors-table tr {
+    display: block;
+  }
+  .authors-table tr {
+    margin-bottom: 1rem;
+  }
+  .authors-table td {
+    padding-left: 50%;
+    position: relative;
+  }
+  .authors-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    color: #6a11cb;
+  }
+}
