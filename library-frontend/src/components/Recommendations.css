@@ -1,0 +1,81 @@
+.recommendations-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.recommendations-container h2 {
+  color: #6a11cb;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recommendations-subtitle {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.recommendations-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.recommendations-table th {
+  text-align: left;
+  padding-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 2px solid #6a11cb;
+}
+
+.recommendations-table td {
+  padding: 12px 10px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  color: #34495e;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.recommendations-table tr:hover td {
+  background-color: #d6e0ff;
+  color: #1a237e;
+}
+
+/* Responsive para tablas */
+@media (max-width: 600px) {
+  .recommendations-table, .recommendations-table thead, .recommendations-table tbody, .recommendations-table th, .recommendations-table td, .recommendations-table tr {
+    display: block;
+  }
+  .recommendations-table tr {
+    margin-bottom: 1rem;
+  }
+  .recommendations-table td {
+    padding-left: 50%;
+    position: relative;
+  }
+  .recommendations-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    color: #6a11cb;
+  }
+}
+
+.loading, .error {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6a11cb;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,96 @@
+.books-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.books-container h2 {
+  color: #6a11cb;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.books-table th {
+  text-align: left;
+  padding-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 2px solid #6a11cb;
+}
+
+.books-table td {
+  padding: 12px 10px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  color: #34495e;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.books-table tr:hover td {
+  background-color: #d6e0ff;
+  color: #1a237e;
+}
+
+/* Responsive para tablas */
+@media (max-width: 600px) {
+  .books-table, .books-table thead, .books-table tbody, .books-table th, .books-table td, .books-table tr {
+    display: block;
+  }
+  .books-table tr {
+    margin-bottom: 1rem;
+  }
+  .books-table td {
+    padding-left: 50%;
+    position: relative;
+  }
+  .books-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: 700;
+    color: #6a11cb;
+  }
+}
+
+/* Botones de género, estilo igual al de books.css que tenías */
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.genre-button {
+  background: linear-gradient(to right, #7200ca, #2196f3);
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.genre-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.genre-button.active {
+  outline: 2px solid white;
+  box-shadow: 0 0 0 3px #2196f3;
+}
