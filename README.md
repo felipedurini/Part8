@@ -1,8 +1,11 @@
 # Part8 Full Stack Open 
 ## https://fullstackopen.com/es/
 
-https://github.com/user-attachments/assets/54e4e5ad-3f3f-431c-bb15-ab7362f578ab
 ---
+
+
+https://github.com/user-attachments/assets/1fd1bf79-5eec-494d-b8b4-6d8edd64b29f
+
 
 # 📚 Library Frontend
 
