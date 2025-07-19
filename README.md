@@ -1,6 +1,7 @@
 # Part8 Full Stack Open 
 ## https://fullstackopen.com/es/
 
+https://github.com/user-attachments/assets/54e4e5ad-3f3f-431c-bb15-ab7362f578ab
 ---
 
 # 📚 Library Frontend
@@ -30,6 +31,9 @@ npm run dev    # inicia la app en http://localhost:5173
 Construido con **Node.js**, **GraphQL** y **MongoDB**.
 
 ## 🚀 Tecnologías principales
+
+
+
 
 * **Express**: framework para manejar rutas y middleware del servidor.
 * **Apollo Server**: servidor GraphQL que procesa las consultas y mutaciones.
